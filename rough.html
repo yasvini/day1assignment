@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"crossorigin></script>
+
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"crossorigin></script>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="h123"></div>
+<script type="text/babel">
+    function F1(){
+        return <h1>Welcome</h1>
+    }
+    const obj=document.getElementById('h123');
+    const reactRootElement = ReactDOM.createRoot(obj);
+    reactRootElement.render(<F1/>);
+</script>
+</body>
+</html>
